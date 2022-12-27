@@ -12,18 +12,7 @@ button.onclick = () => {
     ssbFrame.style.display = isOpen ? "none" : "block"
     isOpen = !isOpen;
 }
-ssbFrame.src = 'http://localhost:5174/'
+ssbFrame.src = 'http://localhost:5174/' + window.location.search
 document.body.append(ssBot);
 ssBot.append(ssbFrame);
-
-{/* <script type="text/javascript">
-    !function(e,t,n){
-    function a(){
-        var e=t.getElementsByTagName("script")[0],n=t.createElement("script");
-        n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)
-        }
-        if(e.Beacon=n=function(t,n,a){
-            e.Beacon.readyQueue.push({method:t,options:n,data:a})
-            },n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});
-            </script> 
-            <script type="text/javascript">window.Beacon('init', 'faddee90-940f-4bb5-b0f5-01c1925701b2')</script> */}
+console.log(window.location.search);

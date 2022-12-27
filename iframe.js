@@ -12,7 +12,7 @@ button.onclick = () => {
     ssbFrame.style.display = isOpen ? "none" : "block"
     isOpen = !isOpen;
 }
-ssbFrame.src = 'http://localhost:5174/' + window.location.search
+ssbFrame.src = `http://localhost:5174/${window.location.search}`
 document.body.append(ssBot);
 ssBot.append(ssbFrame);
-console.log(window.location.search);
+console.log("window.location.search : ", window.location.search);

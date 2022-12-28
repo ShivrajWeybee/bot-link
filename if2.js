@@ -16,3 +16,4 @@ alert("hello", window.location.search);
 ssbFrame.src = `http://localhost:5174/`
 document.body.append(ssBot);
 ssBot.append(ssbFrame);
+console.log("id of Bot : ", window.__be.id);

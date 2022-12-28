@@ -13,7 +13,8 @@ button.onclick = () => {
     isOpen = !isOpen;
 }
 alert("hello", window.location.search);
-ssbFrame.src = `http://localhost:5174/${window.location.search}`
+// ssbFrame.src = `http://localhost:5174/${window.location.search}`
+ssbFrame.src = `http://social.weybee.in/`
 document.body.append(ssBot);
 ssBot.append(ssbFrame);
 console.log("window.location.search : ", window.location.search);

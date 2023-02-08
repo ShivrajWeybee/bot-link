@@ -8,4 +8,4 @@ button.onclick = () => {
     isOpen ? chatImg.src = "https://cdn-icons-png.flaticon.com/512/2076/2076218.png" : chatImg.src = "https://cdn-icons-png.flaticon.com/512/3482/3482248.png";
     ssbFrame.style.display = isOpen ? "none" : "block"; button.title = isOpen ? "open" : "close"; isOpen = !isOpen;
 }
-ssbFrame.src = `https://socialsparsh.staging.weybee.in/`; document.body.append(ssBot); ssBot.append(ssbFrame);
+ssbFrame.src = `http://socialsparsh.weybee.in:8080`; document.body.append(ssBot); ssBot.append(ssbFrame);

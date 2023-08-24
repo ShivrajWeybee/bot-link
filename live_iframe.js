@@ -7,7 +7,7 @@ const chatImg = document.createElement('img'); chatImg.src = "https://social-spa
 button.title = window.config.name;
 button.onclick = () => {
     isOpen ? chatImg.src = "https://social-sparsh.s3.amazonaws.com/BOTIcon/chat.webp" : chatImg.src = "https://social-sparsh.s3.amazonaws.com/BOTIcon/close.webp";
-    ssbFrame.style.display = isOpen ? "none" : "block"; button.title = isOpen ? "Chat" : "Close"; isOpen = !isOpen;
+    ssbFrame.style.display = isOpen ? "none" : "block"; button.title = isOpen ? `${window.config.name}` : "Close"; isOpen = !isOpen;
     if (!botCall) { ssbFrame.src = `https://bot.socialsparsh.com/?id=${window.config.id}`; }
     botCall = true;
 }

@@ -47,7 +47,7 @@ fill="${window.config.iconColor}" stroke="none">
 </g>
 </svg>`;
 };
-
+const button = document.createElement('button');
 const ssBot = document.createElement("div");
 ssBot.id = "socialsparsh-bot";
 ssBot.style.position = "fixed";
